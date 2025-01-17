@@ -1,0 +1,37 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.brand-name {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.brand-logo {
+  max-width: 100%;
+  height: auto;
+  width: 200px; 
+}
+button {
+  padding: 10px;
+  border: solid 1px var(--primary-color);
+  background: var(--primary-color);
+  backcolor: black;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .brand-logo {
+    width: 150px; /* Réduire la taille de l'image pour les écrans plus petits */
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    width: 100px; 
+  }
+}
