@@ -1067,10 +1067,10 @@
           }
         }
       },
-      "Newtonsoft.Json.Bson/1.0.2": {
+      "Newtonsoft.Json.Bson/1.0.3": {
         "type": "package",
         "dependencies": {
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
@@ -3509,10 +3509,10 @@
         "packageIcon.png"
       ]
     },
-    "Newtonsoft.Json.Bson/1.0.2": {
-      "sha512": "QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+    "Newtonsoft.Json.Bson/1.0.3": {
+      "sha512": "bCcwagnHfYnhwQfY1criEcn6Hy9PtBuVnZu0pA8hmRhuR3jI/8WxVgoVAdNw9BJ3JHkxmWJzpj/AQy+PMMLqxg==",
       "type": "package",
-      "path": "newtonsoft.json.bson/1.0.2",
+      "path": "newtonsoft.json.bson/1.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3526,8 +3526,9 @@
         "lib/netstandard2.0/Newtonsoft.Json.Bson.dll",
         "lib/netstandard2.0/Newtonsoft.Json.Bson.pdb",
         "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
-        "newtonsoft.json.bson.1.0.2.nupkg.sha512",
-        "newtonsoft.json.bson.nuspec"
+        "newtonsoft.json.bson.1.0.3.nupkg.sha512",
+        "newtonsoft.json.bson.nuspec",
+        "packageIcon.png"
       ]
     },
     "System.ClientModel/1.0.0": {
@@ -4301,7 +4302,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.1",
       "Newtonsoft.Json >= 13.0.3",
-      "Newtonsoft.Json.Bson >= 1.0.2"
+      "Newtonsoft.Json.Bson >= 1.0.3"
     ]
   },
   "packageFolders": {
@@ -4311,11 +4312,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\quentin.james\\source\\repos\\API\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\quentin.james\\OneDrive - Magellan Partners\\Bureau\\Back\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\quentin.james\\source\\repos\\API\\API\\API.csproj",
+      "projectPath": "C:\\Users\\quentin.james\\OneDrive - Magellan Partners\\Bureau\\Back\\API\\API.csproj",
       "packagesPath": "C:\\Users\\quentin.james\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\quentin.james\\source\\repos\\API\\API\\obj\\",
+      "outputPath": "C:\\Users\\quentin.james\\OneDrive - Magellan Partners\\Bureau\\Back\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4393,7 +4394,7 @@
           },
           "Newtonsoft.Json.Bson": {
             "target": "Package",
-            "version": "[1.0.2, )"
+            "version": "[1.0.3, )"
           }
         },
         "imports": [

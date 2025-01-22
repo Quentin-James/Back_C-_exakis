@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\quentin.james\\source\\repos\\API\\API\\API.csproj": {}
+    "C:\\Users\\quentin.james\\OneDrive - Magellan Partners\\Bureau\\Back\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\quentin.james\\source\\repos\\API\\API\\API.csproj": {
+    "C:\\Users\\quentin.james\\OneDrive - Magellan Partners\\Bureau\\Back\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\quentin.james\\source\\repos\\API\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\quentin.james\\OneDrive - Magellan Partners\\Bureau\\Back\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\quentin.james\\source\\repos\\API\\API\\API.csproj",
+        "projectPath": "C:\\Users\\quentin.james\\OneDrive - Magellan Partners\\Bureau\\Back\\API\\API.csproj",
         "packagesPath": "C:\\Users\\quentin.james\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\quentin.james\\source\\repos\\API\\API\\obj\\",
+        "outputPath": "C:\\Users\\quentin.james\\OneDrive - Magellan Partners\\Bureau\\Back\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -89,7 +89,7 @@
             },
             "Newtonsoft.Json.Bson": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[1.0.3, )"
             }
           },
           "imports": [
