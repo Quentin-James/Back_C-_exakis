@@ -24,12 +24,17 @@ steps:
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
   inputs:
-    version: '8.x'
+    version: '9.x'
     performMultiLevelLookup: true
     includePreviewVersions: true # Required for preview versions
 
 - script: |
-    dotnet build $(solution) --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
+    echo "Listing files in $(Build.SourcesDirectory)"
+    ls -R $(Build.SourcesDirectory)
+  displayName: 'List files in source directory'
+
+- script: |
+    dotnet build $(Build.SourcesDirectory)/$(solution) --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
   displayName: 'Build project'
 
 - task: PublishBuildArtifacts@1
