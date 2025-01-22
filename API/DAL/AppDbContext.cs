@@ -10,7 +10,7 @@ namespace EXERCICE_INTEGRATION.DAL
 
         }
         // Define a DbSet for the Student model
-        public DbSet<Student> Students { get; set; }
+        public virtual DbSet<Student> Students { get; set; }
     }
     // Define the Student model
 }

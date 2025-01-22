@@ -22,7 +22,9 @@ namespace EXERCICE_INTEGRATION.Controllers
         public async Task<ActionResult<IEnumerable<Student>>> Get()
         {
             return await _context.Students.ToListAsync();
+           // return await Task.FromResult(Results.ToList());
         }
+       
 
         [HttpPost]
         public async Task<ActionResult<Student>> Post(Student student)
@@ -31,7 +33,7 @@ namespace EXERCICE_INTEGRATION.Controllers
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(Get), new { id = student.Id }, student);
         }
-
+        
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, Student student)
         {
@@ -58,6 +60,8 @@ namespace EXERCICE_INTEGRATION.Controllers
             await _context.SaveChangesAsync();
             return NoContent();
         }
+        // Add the HttpPatch method
+        // The HttpPatch method updates a student record in the database.
         [HttpPatch("{id}")]
         public async Task<IActionResult> Update(int id, Student student)
         {
