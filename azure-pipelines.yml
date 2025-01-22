@@ -27,11 +27,9 @@ steps:
     version: '9.x'
     performMultiLevelLookup: true
     includePreviewVersions: true # Required for preview versions
-
 - script: |
-    echo "Listing files in $(Build.SourcesDirectory)"
-    ls -R $(Build.SourcesDirectory)
-  displayName: 'List files in source directory'
+    echo "##vso[task.setvariable variable=solutionPath]$(find $(Build.SourcesDirectory) -name '*.sln' | head -n 1)"
+  displayName: 'Find solution file'
 
 - script: |
     dotnet build $(Build.SourcesDirectory)/$(solution) --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
