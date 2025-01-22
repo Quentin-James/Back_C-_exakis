@@ -1,6 +1,7 @@
 trigger:
 - main
 - dev
+
 pr:
 - main
 - dev
@@ -20,11 +21,20 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
-
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
   inputs:
-    version: 8.x
+    version: '8.x'
     performMultiLevelLookup: true
     includePreviewVersions: true # Required for preview versions
 
+- script: |
+    dotnet build $(solution) --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
+  displayName: 'Build project'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+  displayName: 'Publish Pipeline Artifact'
