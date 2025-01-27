@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- ...existing code... -->
+  <PropertyGroup>
+    <!-- ...existing code... -->
+    <StartupObject>API.Program</StartupObject> <!-- Assurez-vous que le nom complet est correct -->
+    <!-- ...existing code... -->
+  </PropertyGroup>
+  <!-- ...existing code... -->
+  <ItemGroup>
+    <!-- ...existing code... -->
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.0" />
+    <!-- ...existing code... -->
+  </ItemGroup>
+  <!-- ...existing code... -->
+</Project>
